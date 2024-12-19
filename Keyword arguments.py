@@ -25,12 +25,11 @@ foo(1, b=2, a=3)
 def foo(a, b=4, c=1):
     print(a, b, c)
 
-foo(1, b=2, c=3)
+foo(1, 2, c=3)
 
 # It is possible to have more parameters than arguments provided if there is a default provided
 
 def foo(a, b, c, d=4):
     print(a, b, c, d)
 
-foo(1, b=2, c=3)
-
+foo(1, 2, c=3)
