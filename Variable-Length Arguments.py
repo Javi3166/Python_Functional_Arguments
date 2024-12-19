@@ -24,9 +24,23 @@ def foo(a, b, *, c, d):
 foo(1, 2, c=3 , d=4)
 
 #
-def fool(*args, last):
+def foo(*args, last):
     for arg in args:
         print(arg)
     print(last)
 
 foo(1, 2, 3, last=100)
+
+#
+def foo(a, b, c):
+    print(a, b, c)
+
+my_list = (0, 1, 2)
+foo(*my_list)
+
+#
+def foo(a, b, c):
+    print(a, b, c)
+
+my_dict = {'a':1, 'b':2, 'c':3}
+foo(**my_dict)
